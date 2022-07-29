@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<title>KEYDUCK KEYDUCK | 키보드 어디까지 써봤니</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/aa4acd9d65.js" crossorigin="anonymous"></script>
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/script.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<!-- 인트로 -->
+		<article id="entrance" class="win_box">
+			<div class="title_wrap">
+				<h2 class="main_tit">키보드, 어디까지 써봤니?</h2>
+				<p class="sub_tit">Hey, how far have you used the keyboard?</p>
+			</div>
+		</article>
+
+		<!-- 검색후 두가지 -->
+		<article id="twoway" class="win_box">
+			<div class="title_wrap">
+				<h2 class="main_tit">키보드, 검색하면 크게 두 가지가 뜨지</h2>
+				<p class="sub_tit">Words that I heard when I bought a keyboard</p>
+			</div>
+
+			<!-- 슬림키보드 -->
+			<section class="columns left">
+				<div class="answer">
+					<h3 class="main_answer">얇은 거</h3>
+					<p class="sub_answer">펜터그래프, 나비식</p>
+				</div>
+
+				<div class="advice">
+					<p>슬림키보드는 나에게 맞는 옵션을 잘 살펴보고 <strong>디자인과 가격이 마음에 드는 것</strong>으로 사자!</p>
+				</div>
+			</section>
+
+			<!-- 기계식키보드 -->
+			<section class="columns right">
+				<div class="answer">
+					<h3 class="main_answer">삼촌이 썼을 법한 거</h3>
+					<p class="sub_answer">멤브레인, 기계식, 게이밍</p>
+				</div>
+
+				<div class="advice">
+					<p><strong>어서와, 기계식 키보드는 처음이지?</strong> 친절하게 알려줄게!</p>
+				</div>
+			</section>
+		</article>
+
+		<!-- 기계식키보드를 알아보자 -->
+		<article id="machine" class="win_box">
+			<!-- 배열설명 -->
+			<section id="key_layout" class="descript">
+				<ul class="layout_list">
+					<li>
+						<span class="img_wrap"><img src="./img/kb_layout_full.png" alt="풀 배열"></span>
+						<p><em class="red"></em>풀 배열 / 104, 108key</p>
+					</li>
+					<li>
+						<span class="img_wrap"><img src="./img/kb_layout_tkl.png" alt="텐키리스"></span>
+						<p><em class="red"></em>텐키리스 / 80~90key</p>
+					</li>
+					<li>
+						<span class="img_wrap"><img src="./img/kb_layout_poker.png" alt="포커 배열"></span>
+						<p><em class="green"></em>포커 배열 / 60key 이하</p>
+					</li>
+					
+					<li>
+						<span class="img_wrap"><img src="./img/kb_layout_mini.png" alt="미니 배열"></span>
+						<p><em class="green"></em>미니 배열 / 60~69key</p>
+					</li>
+					
+				</ul>
+				<div class="explanation">
+					<div class="ex_title">
+						<h4>배열</h4>
+						<p>Keyboard Layout</p>
+					</div>
+
+					<p>
+						사용하는 장소와 목적에 따라  선택이 달라질 수 있어! 업무와 게임 등에는 <em class="red"></em>풀 배열을, 간단한 타이핑이 주된 사용 목적이라면 <em class="green"></em>작은 배열의 키보드도 좋아.
+					</p>
+					<span class="circle_back">뒤로<br>가기</span>
+				</div>
+			</section>
+
+			<!-- 키캡설명 -->
+			<section id="keycap" class="descript">
+				<ul class="keycaps">
+					<li>
+						<h6>키캡의 재질</h6>
+						<img src="./img/kcaps_met.png" alt="재질설명">
+					</li>
+					<li>
+						<h6>인쇄(각인) 방식</h6>
+						<img src="./img/kcaps_print.png" alt="각인설명">
+					</li>
+					<li>
+						<h6>키캡의 높이</h6>
+						<img src="./img/kcaps_step.png" alt="높이설명">
+					</li>
+				</ul>
+
+				<div class="explanation">
+					<div class="ex_title">
+						<h4>키캡</h4>
+						<p>Key Caps</p>
+					</div>
+
+					<p>
+						타이핑에 가장 먼저 영향을 주는 키캡은 재질과 인쇄(각인)방법, 그리고 줄마다 다른 키의 높이 차이 등을 고려해 볼 수 있어.
+					</p>
+					<span class="circle_back">뒤로<br>가기</span>
+				</div>
+			</section>
+
+			<!-- 메인 -->
+			<section class="main_atcle">
+				<div class="title_wrap">
+					<h2 class="main_tit">기계식 키보드 살 때 일단 3가지만 확인하자</h1>
+					<p class="sub_tit">Let's check three things when we buy a keyboard</p>
+				</div>
+
+				<ul class="three_things">
+					<li>
+						<a href="#">
+							<h4>배열</h4>
+							<p class="on">키보드 크기가 어느정도인게 좋겠어?</p>
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<h4>키캡</h4>
+							<p class="on">손을 올렸을 때 느낌이 어땠으면 좋겠어?</p>
+						</a>
+					</li>
+
+					<li>
+						<a href="#">
+							<h4>스위치</h4>
+							<p class="on">키를 눌렀을 때 느낌이 어땠으면 좋겠어?</p>
+						</a>
+					</li>
+				</ul>
+			</section>
+		</article>
+
+		<!-- 스위치 설명 -->
+		<article id="switches" class="win_box">
+			<div class="barTop_ex">
+				<p class="point">기계식 키보드의 핵심.<strong>스위치!</strong> 구조에 따라 누르는 느낌과 소리가 달라지지. 우리말로 표현할 땐 <strong>'축'</strong>이라는 말을 써.</p>
+				<p class="point_ex">아래 4가지는 가장 기본적인 구조를 대표할 뿐, 여기서 더욱 세분화되어 정말 다양한 축들이 존재해.</p>
+			</div>
+
+			<div class="switch_wrap">
+				<div class="switch_sec clickly">
+					<span class="bg_fff"></span>
+					<div class="swch_block_wrap">
+						<img class="default_off" src="./img/switch_clicky.gif" alt="타입">
+						<h4>클릭 타입</h4>
+						<p>Clicky</p>
+						<h6 class="default_off">'찰칵', 클릭하는 듯한 소리가 특징</h6>
+						<span class="default_off">손에 착착 감기는 타건감</span>
+						<span class="default_off">그리고 확실하게 시끄러움</span>
+
+						<ul class="sw_comp default_off">
+							<li class="switch_list">
+								<span class="sw_brand">체리</span>
+								<div class="color_wrap">
+									<p>
+										<span class="switch blue">청축</span>
+										<span class="switch green">녹축</span>
+										<span class="switch milk">밀크축</span>
+									</p>
+								</div>
+							</li>
+
+							<li class="switch_list">
+								<span class="sw_brand">게이트론</span>
+								<div class="color_wrap">
+									<p>
+										<span class="switch blue">청축</span>
+										<span class="switch green">녹축</span>
+									</p>
+								</div>
+							</li>
+
+							<li class="switch_list">
+								<span class="sw_brand">카일</span>
+								<div class="color_wrap">
+									<p>
+										<span class="switch blue">청축</span>
+										<span class="switch green">제이드축</span>
+										<span class="switch milk">백축</span>
+										<span class="switch navy">네이비축</span>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="switch_sec tactile">
+					<span class="bg_fff"></span>
+					<div class="swch_block_wrap">
+						<img class="default_off" src="./img/switch_tactile.gif" alt="타입">
+						<h4>넌클릭 타입</h4>
+						<p>Soft Tactile</p>
+						<h6 class="default_off">명쾌한 또각또각 소리가 특징</h6>
+						<span class="default_off">손끝에서 느껴지는 확실한 타건감</span>
+						<span class="default_off">약간 시끄러움</span>
+
+						<ul class="sw_comp default_off">
+							<li class="switch_list">
+								<span class="sw_brand">체리</span>
+								<div class="color_wrap">
+									<p>
+										<span class="switch brown">갈축</span>
+										<span class="switch clean">클리어축</span>
+										<span class="switch gray">회축</span>
+									</p>
+								</div>
+							</li>
+
+							<li class="switch_list">
+								<span class="sw_brand">게이트론</span>
+								<div class="color_wrap">
+									<p>
+										<span class="switch brown">갈축</span>
+									</p>
+								</div>
+							</li>
+
+							<li class="switch_list">
+								<span class="sw_brand">카일</span>
+								<div class="color_wrap">
+									<p>
+										<span class="switch brown">갈축</span>
+										<span class="switch orange">오렌지축</span>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="switch_sec linear">
+					<span class="bg_fff"></span>
+					<div class="swch_block_wrap">
+						<img class="default_off" src="./img/switch_linear.gif" alt="타입">
+						<h4>리니어 타입</h4>
+						<p>Linear</p>
+						<h6 class="default_off">경쾌하고 쫀득한 챠락 소리가 특징</h6>
+						<span class="default_off">내 손끝을 밀어내는 듯한 탄력감있는 타건감</span>
+						<span class="default_off">오타생성기</span>
+
+						<ul class="sw_comp default_off">
+							<li class="switch_list">
+								<span class="sw_brand">체리</span>
+								<div class="color_wrap">
+									<p>
+										<span class="switch red">적축</span>
+										<span class="switch black">흑축</span>
+										<span class="switch silver">은축</span>
+									</p>
+								</div>
+							</li>
+
+							<li class="switch_list">
+								<span class="sw_brand">게이트론</span>
+								<div class="color_wrap">
+									<p>
+										<span class="switch red">적축</span>
+										<span class="switch black">흑축</span>
+										<span class="switch yellow">황축</span>
+										<span class="switch milk">백축</span>
+									</p>
+								</div>
+							</li>
+
+							<li class="switch_list">
+								<span class="sw_brand">카일</span>
+								<div class="color_wrap">
+									<p>
+										<span class="switch red">적축</span>
+										<span class="switch black">흑축</span>
+										<span class="switch yellow">황축</span>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="switch_sec capacitive">
+					<span class="bg_fff"></span>
+					<div class="swch_block_wrap">
+						<img class="default_off" src="./img/switch_cap.gif" alt="타입">
+						<h4>무접점(정전용량) 타입</h4>
+						<p>Capacitive</p>
+						<h6 class="default_off">보글보글 찌개가 끓는 듯한 소리</h6>
+						<span class="default_off">장시간 사용해도 편안한 손가락</span>
+						<span class="default_off">나의 지갑을 털어가는 악마</span>
+
+						<ul class="sw_comp default_off">
+							<li class="switch_list">노뿌</li>
+							<li class="switch_list">토프레</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<!-- 상품명 읽는 방법 -->
+		<article id="prod_name" class="win_box">
+			<div class="title_wrap">
+				<h2 class="main_tit">상품명은 무슨 암호야?</h1>
+				<p class="sub_tit">The product name sounds like a code!</p>
+			</div>
+
+			<ul class="prod_detail">
+				<li class="vamilo">
+					<img src="./img/sample_01.jpg" alt="상품페이지">
+					<span class="point_dot brand_name"></span>
+					<span class="point_dot model_name"></span>
+					<span class="point_dot use_keycaps"></span>
+					<span class="point_dot use_switch"></span>
+					<span class="point_dot use_color"></span>
+
+					<ul class="name_ex">
+						<li class="brand_name">키보드 회사명</li>
+						<li class="model_name">모델명</li>
+						<li class="use_keycaps">재질, 각인방식</li>
+						<li class="use_switch">사용된 축</li>
+						<li class="use_color">색상</li>
+					</ul>
+				</li>
+				<li class="ducky">
+					<img src="./img/sample_02.jpg" alt="상품페이지">
+					<span class="point_dot brand_name"></span>
+					<span class="point_dot model_name"></span>
+					<span class="point_dot layout"></span>
+					<span class="point_dot use_keycaps"></span>
+					<span class="point_dot use_switch"></span>
+					<span class="point_dot use_color"></span>
+
+					<ul class="name_ex">
+						<li class="brand_name">키보드 회사명</li>
+						<li class="model_name">제품명</li>
+						<li class="layout">키보드 배열</li>
+						<li class="use_keycaps">재질, 각인방식</li>
+						<li class="use_switch">사용된 축</li>
+						<li class="use_color">색상</li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+
+		<!-- 옵션 확인 -->
+		<article id="option" class="win_box">
+			<div class="title_wrap">
+				<h2 class="main_tit">그 외에 나에게 맞는 옵션들을 확인해보자.</h1>
+				<p class="sub_tit">If you choose your favorite keyboard, check out the options that suit you</p>
+			</div>
+
+			<ul class="op_list">
+				<li class="options on">
+					<a href="#">연결방식</a>
+					<div class="op_cont">
+						<p>
+							빠른 전송을 위해 기계식 키보드엔 유선이 주로 사용되. 하지만 요즘은 블루투스로 연결가능한 기계식 키보드들도 많이 출시되는 추세야.
+						</p>
+						<ul class="list_con">
+							<li><img src="./img/option_cable_01.png" alt="일체형 유선"><span>유선(분리형)</span></li>
+							<li><img src="./img/option_cable_02.png" alt="분리형 유선"><span>유선(일체형)</span></li>
+							<li><img src="./img/option_cable_03.png" alt="유무선"><span>유·무선(블루투스)</span></li>
+						</ul>
+					</div>
+				</li>
+				<li class="options">
+					<a href="#">MAC 호환성</a>
+					<div class="op_cont">
+						<p>
+							MAC을 위해 준비된 기계식 키보드들도 많이 있어! 키 배열부터 키 맵핑까지 최대한 MAC에 맞춰 사용할 수 있는 기계식 키보드들이야.
+						</p>
+						<ul class="list_con">
+							<li><img src="./img/option_mac_01.png" alt="맥호환키보드01"><span>키크론 키보드</span></li>
+							<li><img src="./img/option_mac_02.png" alt="맥호환키보드02"><span>바밀로 키보드</span></li>
+							<li><img src="./img/option_mac_03.png" alt="맥호환키보드03"><span>한성 키보드</span></li>
+						</ul>
+					</div>
+				</li>
+				<li class="options">
+					<a href="#">LED 유무</a>
+					<div class="op_cont">
+						<p>
+							반짝거리는 LED는 기계식 키보드의 전유물이지. 화려한게 싫다면 꺼놓을수도 있지만 가격이 비싸지니 선호하지 않는다면 옵션을 잘 살펴보자.
+						</p>
+						<ul class="list_con">
+							<li><img src="./img/option_led_01.png" alt="LED있음"><span>RGB-LED</span></li>
+							<li><img src="./img/option_led_02.png" alt="LED있음"><span>단일색상LED</span></li>
+							<li><img src="./img/option_led_03.png" alt="LED없음"><span>LED없음</span></li>
+						</ul>
+
+					</div>
+				</li>
+			</ul>
+		</article>
+
+		<!-- 한번 들어봐 -->
+		<article id="kb_video" class="win_box">
+			<div class="title_wrap">
+				<h2 class="main_tit">백문이 불여일타!</h2>
+				<p class="sub_tit">It's better to see once than to hear ten times</p>
+			</div>
+
+			<div class="con_wrap">
+				<p class="comment">타건영상을 보며 맘에 드는 소리를 골라보자!</p>
+				<p class="comment">직접 타건할 수 있는 매장을 찾아보는 것도 좋은 방법이야.</p>
+
+				<div class="video_wrap">
+					<ul class="video_list">
+						<li>
+							<iframe width="480" height="270" src="https://www.youtube.com/embed/hugRzsZgU6E?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<span>청축 타건 영상</span>
+						</li>
+						<li>
+							<iframe width="480" height="270" src="https://www.youtube.com/embed/n0JW0LmkNZA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<span>갈축 타건 영상</span></li>
+						<li>
+							<iframe width="480" height="270" src="https://www.youtube.com/embed/K6OA6sPU5UQ?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<span>적축 타건 영상</span>
+						</li>
+						<li>
+							<iframe width="480" height="270" src="https://www.youtube.com/embed/1n9u7cA3nTw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<span>흑축 타건 영상</span>
+						</li>
+						<li>
+							<iframe width="480" height="270" src="https://www.youtube.com/embed/qF1cedcHND4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<span>무접점 타건 영상</span>
+						</li>
+						<li>
+							<iframe width="480" height="270" src="https://www.youtube.com/embed/-thUWCKpsBU?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<span>저소음적축 타건 영상</span>
+						</li>
+					</ul>
+				</div>
+
+				<div class="arrow_wrap">
+					<p class="ar_left"><i class="fa-solid fa-circle-chevron-left"></i></p>
+					<p class="ar_right"><i class="fa-solid fa-circle-chevron-right"></i></p>
+				</div>
+			</div>
+		</article>
+
+		<!-- 마지막 체크 -->
+		<article id="check_op" class="win_box">
+			<div class="title_wrap">
+				<h2 class="main_tit">기계식 키보드가 아닐수도 있어!<br> 잘 살펴보자 :D</h2>
+				<p class="sub_tit">Maybe it's not. Let's take a good look.</p>
+			</div>
+
+			<!-- 질문 -->
+			<ul class="faq_list">
+				<li class="on"><a href="#" >기계식 키보드가 이렇게 싸기도 해?</a></li>
+				<li><a href="#">상품명에 기계식 키보드의 특징이 하나도 포함되어 있지 않다면?</a></li>
+				<li><a href="#">특정 부품만 파는 것은 아닌지 다시 한번 확인해보자!</a></li>
+			</ul>
+
+			<!-- 대답 -->
+			<ul class="answer_faq">
+				<li class="on">
+					<p>
+						멤브레인은 외형적으로 기계식 키보드와 구분하기 어려워. 기계식 키보드는 제작 방식에 의해 일정 금액 이하로 판매하긴 어려운 상품이야! 최근 저렴하게 나온 상품들이 많아지기는 했지만 확실히 기계식이 맞는지 확인해보는 것이 좋아. 상품의 상세페이지에서 ‘멤브레인 키보드’가 아닌지 꼭 확인해보자!
+					</p>
+				</li>
+				<li>
+					<p>
+						위에서 언급한 내부 부품들을 사용하지 않아도 자체적인 부품을 사용해서 제작한 기계식 키보드들도 존재해. 외형적으로 독특하게 만들거나 회사의 브랜드를 더 알리기 위해 사용하기도 하지. 그래서 특징이 없어도 꼭 '기계식'이라는 이름은 사용하니, 역시 상세페이지에 '접점방식:기계식'을 확인해보도록 하자.
+					</p>
+				</li>
+				<li>
+					<p>
+						요즘은 온라인의 판매 중개사이트들의 판매 규정이 많이 까다로와져서 달라지기는 했지만 여전히 키보드 사진을 두고 키캡만 판매한다던지, 스위치만 판매하는 곳도 종종 발견할 수 있어. 사진에 현혹되지 말고 내부에 공개한 상세페이지를 잘 읽어보도록 하자.
+					</p>
+				</li>
+			</ul>
+		</article>
+
+		<!-- 키보드 회사들 -->
+		<article id="keycompany" class="win_box">
+			<div class="title_wrap">
+				<h2 class="main_tit">이렇게 많은 키보드 회사들!</h1>
+				<p class="sub_tit">If you don't know, ask MI!</p>
+			</div>
+
+			<ul class="keycom_list">
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_1.png" alt="레오폴드">
+					<p>레오폴드</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_2.png" alt="바밀로">
+					<p>바밀로</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_3.png" alt="필코">
+					<p>필코</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_4.png" alt="로지텍">
+					<p>로지텍</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_5.png" alt="씽크웨이">
+					<p>씽크웨이</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_6.png" alt="듀가드">
+					<p>듀가드</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_7.png" alt="앱코">
+					<p>앱코</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_8.png" alt="콕스">
+					<p>콕스</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_9.png" alt="한성키보드">
+					<p>한성키보드</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_10.png" alt="더키">
+					<p>더키</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_11.png" alt="몬스타기어">
+					<p>몬스타기어</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_12.png" alt="엠스톤">
+					<p>엠스톤</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_13.png" alt="키크론">
+					<p>키크론</p>
+				</li>
+				<li class="keycom">
+					<img src="./img/kb_brand_logo_14.png" alt="커세어">
+					<p>커세어</p>
+				</li>
+			</ul>
+
+			<h2>그리고, 제각각의 개성이 있는 스위치 회사들</h2>
+
+			<ul class="switcom_list">
+				<li>
+					<img src="./img/swt_logo_01.png" alt="체리MX">
+					<div class="swt_logo_wrap">
+						<span>CHERRY MX</span>
+						<p>체리MX: 가장 대표적인 스위치 제조사.</p>
+					</div>
+				</li>
+				<li>
+					<img src="./img/swt_logo_02.png" alt="게이트론">
+					<div class="swt_logo_wrap">
+						<span>Gateron</span>
+						<p>게이트론 : 가장 보편적인 스위치 제조사.</p>
+					</div>
+				</li>
+				<li>
+					<img src="./img/swt_logo_03.png" alt="카일">
+					<div class="swt_logo_wrap">
+						<span>Kailh</span>
+						<p>카일 : '광축'을 제조하는 스위치 제조사.</p>
+					</div>
+				</li>
+				<li>
+					<img src="./img/swt_logo_04.png" alt="오테뮤">
+					<div class="swt_logo_wrap">
+						<span>Otemu</span>
+						<p>오테뮤 : 저렴하고 품질좋은 가성비 제조사.</p>
+					</div>
+				</li>
+			</ul>
+		</article>
+
+		<!-- 마무리 -->
+		<article id="outro" class="win_box">
+			<div class="title_wrap">
+				<h2 class="main_tit">내 맘에 쏙드는 인생키보드 찾길바래!</h1>
+				<p class="sub_tit">I hope you find your favorite keyboard!</p>
+			</div>
+
+			<ul class="big_menu">
+				<li>
+					<a href="#" class="choice"><span>고마워! 난 이제 나의<br>키보드를 찾아 떠날거야!</span></a>
+					<ul class="quick_link big_2dep_menu">
+						<li><a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=%EA%B8%B0%EA%B3%84%EC%8B%9D+%ED%82%A4%EB%B3%B4%EB%93%9C" target="_new">네이버 '기계식 키보드' 검색 결과</a></li>
+						<li><a href="http://search.danawa.com/dsearch.php?k1=%EA%B8%B0%EA%B3%84%EC%8B%9D%20%ED%82%A4%EB%B3%B4%EB%93%9C"  target="_new">다나와 '기계식 키보드' 검색 결과</a></li>
+						<li><a href="https://www.coupang.com/np/search?component=&q=%EA%B8%B0%EA%B3%84%EC%8B%9D+%ED%82%A4%EB%B3%B4%EB%93%9C&channel=user"  target="_new">쿠팡 '기계식 키보드' 검색 결과</a></li>
+						<li><a href="https://www.11st.co.kr/category/DisplayCategory.tmall?method=getDisplayCategory3Depth&dispCtgrNo=1009853"  target="_new">11번가 '기계식 키보드' 검색 결과</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" class="choice"><span>여전히 모르겠어. 설명이<br>다시 한 번 필요할 것 같아.</span></a>
+					<ul class="short_menu big_2dep_menu">
+						<li><a href="#">배열 & 키캡</a></li>
+						<li><a href="#">스위치 종류</a></li>
+						<li><a href="#">상품명 읽는 방법</a></li>
+						<li><a href="#">타건 영상</a></li>
+						<li><a href="#">알려진 키보드 브랜드</a></li>
+					</ul>
+				</li>
+			</ul>
+		</article>
+
+		<!-- 퀵 포인트 -->
+		<div class="qck_point">
+			<ul>
+				<li class="on"><a href="#">인트로</a></li>
+				<li><a href="#">입문</a></li>
+				<li><a href="#">배열,키캡</a></li>
+				<li><a href="#">스위치</a></li>
+				<li><a href="#">상품명</a></li>
+				<li><a href="#">옵션</a></li>
+				<li><a href="#">타건 영상</a></li>
+				<li><a href="#">체크하기</a></li>
+				<li><a href="#">브랜드</a></li>
+				<li><a href="#">아웃트로</a></li>
+			</ul>
+		</div>
+	</div>
+	<script></script>
+</body>
+</html>
