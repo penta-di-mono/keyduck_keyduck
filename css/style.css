@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 
 * {margin: 0; padding: 0;}
@@ -807,6 +807,7 @@ article#kb_video div.con_wrap div.video_wrap ul.video_list {
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 article#kb_video div.con_wrap div.video_wrap ul.video_list li {
 	width: 480px;
